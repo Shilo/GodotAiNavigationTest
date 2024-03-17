@@ -13,7 +13,7 @@ config_version=5
 config/name="AI Navigation Test"
 config/description="Showcase tilemap navigation mesh and agents.
 Agents will follow the mouse position while avoiding walls and each other."
-run/main_scene="res://main/main.tscn"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
