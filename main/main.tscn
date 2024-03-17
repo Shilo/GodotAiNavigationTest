@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjeg57ychh0mw"]
+
+[ext_resource type="Script" path="res://main/main.gd" id="1_2vn47"]
+[ext_resource type="PackedScene" uid="uid://cmcjh7p5nbkh4" path="res://entity/entity.tscn" id="2_hfarr"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_2vn47")
+
+[node name="Ground" type="TileMap" parent="."]
+format = 2
+
+[node name="Entities" type="Node" parent="."]
+
+[node name="Entity" parent="Entities" instance=ExtResource("2_hfarr")]
+position = Vector2(283, 159)
