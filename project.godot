@@ -28,3 +28,7 @@ window/dpi/allow_hidpi=false
 
 2d_physics/layer_1="Default"
 2d_physics/layer_2="Entities"
+
+[navigation]
+
+2d/default_edge_connection_margin=16.0
