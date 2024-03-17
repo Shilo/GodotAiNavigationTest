@@ -1,0 +1,17 @@
+[gd_resource type="GradientTexture2D" script_class="ColorTileset" load_steps=3 format=3 uid="uid://bq6rvuk6noumm"]
+
+[ext_resource type="Script" path="res://core/tileset/color_tileset.gd" id="1_hey8k"]
+
+[sub_resource type="Gradient" id="Gradient_ang0s"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1)
+
+[resource]
+gradient = SubResource("Gradient_ang0s")
+width = 128
+height = 16
+script = ExtResource("1_hey8k")
+tile_size = Vector2i(16, 16)
+tile_colors = Array[Color]([Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(0, 1, 0, 1), Color(0, 0, 1, 1), Color(1, 1, 0, 1), Color(0, 1, 1, 1), Color(1, 0, 1, 1)])
+editor_update = false
