@@ -5,9 +5,6 @@ extends CharacterBody2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 
 func _ready():
-	nav_agent.path_desired_distance = 4.0
-	nav_agent.target_desired_distance = 4.0
-	
 	set_physics_process(false)
 	await get_tree().process_frame
 	set_physics_process(true)

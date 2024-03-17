@@ -1,15 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://bjeg57ychh0mw"]
+[gd_scene load_steps=8 format=3 uid="uid://bjeg57ychh0mw"]
 
 [ext_resource type="Texture2D" uid="uid://bq6rvuk6noumm" path="res://core/tileset/tileset.tres" id="2_82xrv"]
 [ext_resource type="PackedScene" uid="uid://cmcjh7p5nbkh4" path="res://entity/entity.tscn" id="2_hfarr"]
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_h3wea"]
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_8r25l"]
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_ilr5l"]
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_f0041"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)])
 agent_radius = 0.0
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_o00av"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cfsmq"]
 texture = ExtResource("2_82xrv")
@@ -23,14 +25,15 @@ texture = ExtResource("2_82xrv")
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-2:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_h3wea")
+2:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_8r25l")
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
-3:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_ilr5l")
+3:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_f0041")
 4:0/0 = 0
 4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_o00av")
 5:0/0 = 0
 5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:0/0/physics_layer_0/angular_velocity = 0.0
