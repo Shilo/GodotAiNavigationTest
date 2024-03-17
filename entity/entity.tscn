@@ -24,6 +24,7 @@ path_desired_distance = 4.0
 target_desired_distance = 4.0
 avoidance_enabled = true
 radius = 6.0
+neighbor_distance = 64.0
 max_speed = 200.0
 debug_enabled = true
 
