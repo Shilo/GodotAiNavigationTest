@@ -21,3 +21,8 @@ func _physics_process(_delta):
 	var next_position: Vector2 = nav_agent.get_next_path_position()
 	velocity = global_position.direction_to(next_position) * speed
 	move_and_slide()
+
+
+func _on_navigation_agent_2d_velocity_computed(safe_velocity):
+	velocity = safe_velocity
+	move_and_slide()
